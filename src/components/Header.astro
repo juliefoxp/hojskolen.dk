@@ -73,14 +73,15 @@ import Heading from "./Heading.astro";
       </li>
     </ul>
   </nav>
-  
-<script is:inline client:load>
-  const menuBtn = document.getElementById('menu-btn');
-  const menu = document.getElementById('menu');
 
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+  <script is:inline>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
 
+    if (menuBtn && menu) {
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+  </script>
 </header>
