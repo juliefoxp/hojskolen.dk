@@ -1,5 +1,50 @@
 ---
+import FacebookIcon from '../assets/images/facebook.svg';
+import InstagramIcon from '../assets/images/instagram.svg';
+import Logo from '../assets/images/logo.svg';
 ---
-<footer>
- 
+
+<footer class="border-t-6 border-[#ff5900] bg-[#f6eadb] py-8 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8">
+
+    <!-- Kolonne 1 -->
+    <div>
+      <h3 class="font-bold mb-4">HÖJSKOLENDK</h3>
+      <p>Rosenørns Allé 31<br>1970 Frederiksberg<br>Danmark</p>
+      <p class="mt-2">Telefon: 7027 9007<br>Mandag til Fredag // Kl. 10.00-16.00<br>Mail: info@hojskolendk.dk</p>
+    </div>
+
+    <!-- Kolonne 2 -->
+    <div>
+      <h3 class="font-bold mb-4">GODT AT VIDE</h3>
+      <ul class="space-y-2">
+        <li>FAQ</li>
+        <li>Job</li>
+        <li>Bæredygtighed</li>
+        <li>Rejsegarantifonden</li>
+        <li>Fra tilmelding til afrejse</li>
+        <li>Generelle bestemmelser</li>
+        <li>Grupperejser for unge</li>
+        <li>Rejs i sabbatår</li>
+      </ul>
+    </div>
+
+    <!-- Kolonne 3 -->
+    <div>
+      <h3 class="font-bold mb-4">SOCIALE MEDIER</h3>
+      <div class="flex space-x-4 mb-4">
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+          <FacebookIcon class="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+          <InstagramIcon class="h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14" />
+        </a>
+      </div>
+
+    <div class="mt-4">
+  <a href="/">
+    <Logo class="h-20 sm:h-24 lg:h-28 w-auto" />
+  </a>
+</div>
+
 </footer>
