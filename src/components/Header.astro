@@ -5,7 +5,7 @@ import logo from "../assets/images/logo.svg?url";
 import Heading from "./Heading.astro";
 ---
 
-<header class="bg-[#f6eadb] border-b-6 border-[#ff5900]">
+<header class="bg-[#f6eadb] border-b-6 border-[#ff5900] relative z-50">
   <nav class="container mx-auto flex items-center justify-between p-4 relative">
     <!-- Logo -->
     <a
@@ -37,15 +37,15 @@ import Heading from "./Heading.astro";
     <!-- Menu links -->
     <ul
       id="menu"
-      class="hidden flex-col lg:flex lg:flex-row lg:items-center lg:space-x-12 font-bold text-gray-800 absolute top-full left-0 w-full lg:static lg:w-auto bg-[#f6eadb] lg:bg-transparent"
+      class="hidden flex-col lg:flex lg:flex-row lg:items-center lg:space-x-12 font-bold text-gray-800 absolute top-full left-0 w-full lg:static lg:w-auto bg-[#f6eadb] lg:bg-transparent shadow-lg z-50"
     >
       <li>
-        <a href="#" class="inline-block py-3 px-4 lg:py-0 lg:px-0 hover:scale-105 transform transition-transform duration-200">
+        <a href="/pris" class="inline-block py-3 px-4 lg:py-0 lg:px-0 hover:scale-105 transform transition-transform duration-200">
           PRISER
         </a>
       </li>
       <li>
-        <a href="#" class="inline-block py-3 px-4 lg:py-0 lg:px-0 hover:scale-105 transform transition-transform duration-200">
+        <a href="/pris" class="inline-block py-3 px-4 lg:py-0 lg:px-0 hover:scale-105 transform transition-transform duration-200">
           HØJSKOLEOPHOLD
         </a>
       </li>
@@ -62,7 +62,7 @@ import Heading from "./Heading.astro";
       </li>
       <li>
         <a
-          href="#"
+          href="/pris"
           class="inline-block py-2 px-5 my-2 lg:my-0 text-white rounded-[25px] transition-colors duration-200"
           style="background-color: #ff5900;"
           onmouseover="this.style.backgroundColor='#ff9359'"
